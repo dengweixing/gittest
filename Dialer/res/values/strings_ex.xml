@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Sprd add-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SPRD: Title for the call log tab containing the list of outgoing voicemails and calls -->
+    <string name="call_log_outgoing_title">Outgoing</string>
+    <!-- SPRD: Title for the call log tab containing the list of incoming voicemails and calls -->
+    <string name="call_log_incoming_title">Incoming</string>
+    <!-- SPRD: Text displayed when the list of out going calls is empty -->
+    <string name="recentOutgoing_empty">No recent outgoing calls.</string>
+    <!-- SPRD: Text displayed when the list of incoming calls is empty -->
+    <string name="recentIncoming_empty">No recent incoming calls.</string>
+    <!-- SPRD: filter call log with different sim -->
+    <string name="view_setting">View</string>
+    <!-- SPRD: item list of view setting dialog-->
+    <string name="item_all_calls">All call logs</string>
+    <string name="item_sim_calls">SIM%d call logs</string>
+
+    <!-- SPRD: Call log delete menu -->
+    <string name="clear_all_call_log">Clear all the call log</string>
+    <string name="clear_selected_call_log">Clear selected call log</string>
+    <string name="select_all">Select all</string>
+    <string name="unselect_all">Deselect all</string>
+
+    <!-- SPRD: Add by spreadst @{ -->
+    <string name="sdn_list">"SDN list"</string>
+    <string name="lnd_list">"LND list"</string>
+
+    <string name="sim_no_ready" >"Sim card not ready."</string>
+    <string name="select_card">Please select card</string>
+    <string name="fast_dial_settings">Fast dial settings</string>
+    <string name="call_ip">IP Call</string>
+    <string name="ip_callNumber_by_sim_ex">"IP Call<xliff:g id="NAME">%s</xliff:g> (<xliff:g id="SIM">%s</xliff:g>)"</string>
+    <!-- @{ -->
+
+    <!-- SPRD: Add by Spreadst @{ -->
+    <string name="no_available_number">No number available</string>
+    <!-- @} -->
+    
+    <string name="send_mms">Send message</string>
+    <!-- SPRD: fast call number is not set -->
+    <string name="no_fast_dial">Fast call phone number not set</string>
+    
+    <!-- SPRD: Add by SPRD @{ -->
+    <string name="menu_addToBlacklist">Add to blacklist</string>
+    <string name="call_log_callNumber_by_sim_ex">"Call(<xliff:g id="SIM">%s</xliff:g>)"</string>
+    <string name="video_callNumber_by_sim_ex">"Video Call(<xliff:g id="SIM">%s</xliff:g>)"</string>
+    <string name="ip_callNumber_by_sim_ex">"IP Call(<xliff:g id="SIM">%s</xliff:g>)"</string>
+    <string name="menu_viewContact">View contact</string>
+    <string name="menu_deleteFromBlacklist">Delete from blacklist</string>
+    <string name="success_addToBlacklist">Add success</string>
+    <string name="failed_addToBlacklist">Add failed</string>
+    <string name="delete_calls">Delete</string>
+    <string name="delete_selected_calls">Are you sure delete the selected records</string>
+    <string name="delete_all_calls_confirm">Do you want to delete the records of all yours?</string>
+    <string name="delete_contact_all_calls">Are you sure to delete contact\'s listed call logs?</string>
+    <string name="call_log_contacts_not_save">Unknown</string>
+    <string name="toast_no_activity_to_handle_intent">No Application to response!</string>
+    <string name="search_description">Search CallLog</string>
+    <string name="doneButton">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_all_sprd">Select all</string>
+    <string name="sim_no_effect">SIM invalidate</string>
+    <string name="delete_success">Delete success</string>
+    <string name="error_icc_lock_dialog_message">The selected SIM card is now locked.</string>
+    <string name="insert_sim_card">Please insert SIM card.</string>
+    <!-- @} -->
+    <string name="simx">SIM</string>
+</resources>

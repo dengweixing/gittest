@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialtacts_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialpad_background_sprd"
+    android:clipChildren="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <!-- Overlapping dialpad fragment is inserted here -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/ab_holo_light_sprd"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp" >
+
+                <TextView
+                    android:id="@+id/aciton_bar_tiltle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/applicationLabel"
+                    android:textColor="@color/dialpad_action_bar_text_color_sprd"
+                    android:textSize="@dimen/search_text_size_sprd"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/search_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/search_view"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dip"
+                        android:background="@android:color/transparent"
+                        android:inputType="textFilter"
+                        android:singleLine="true"  
+                        android:ellipsize="end"
+                        android:textColor="@color/dialpad_action_bar_text_color_sprd"
+                        android:textColorHint="@color/dialpad_action_bar_text_color_sprd"
+                        android:textSize="@dimen/search_text_size_sprd" />
+
+                    <ImageView
+                        android:id="@+id/search_close_button"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:src="@drawable/ic_menu_delete_normal_holo_light_sprd"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/voice_search_button"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:contentDescription="@string/description_start_voice_search"
+                        android:src="@drawable/ic_menu_voice_normal_holo_light_sprd" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/overflow_menu"
+                android:layout_width="@dimen/fake_menu_button_min_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|end"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/action_menu_overflow_description"
+                android:src="@drawable/ic_menu_moreoverflow_normal_holo_light_sprd" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipChildren="false" >
+
+            <FrameLayout
+                android:id="@+id/dialtacts_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false" >
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/dialpad_shadow_sprd" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/fake_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttom_button_height_sprd"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/call_history_button"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/call_history_background_sprd"
+                android:contentDescription="@string/action_menu_call_history_description"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/dialpad_button"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/dialpad_button_background_sprd"
+                android:contentDescription="@string/action_menu_dialpad_button"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/all_contacts_button"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/all_contacts_button_background_sprd"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dialtacts_bottom_padding"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>
