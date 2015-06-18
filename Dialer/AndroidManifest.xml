@@ -13,8 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!--this is test1-->
-<!--this is temp-->
+<!--some body else add-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.dialer">
 
