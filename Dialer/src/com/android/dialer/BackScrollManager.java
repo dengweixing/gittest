@@ -32,7 +32,7 @@ public class BackScrollManager {
         /** Sets the offset by which to scroll. */
         public void setOffset(int offset);
         /** Gets the maximum offset that should be applied to the header. */
-        public int getMaximumScrollableHeaderOffset(change from gittestb);
+        public int getMaximumScrollableHeaderOffset(this is gittest new);
     }
 
     private final ScrollableHeader mHeader;
@@ -86,4 +86,9 @@ public class BackScrollManager {
         // header.
         mListView.setVerticalScrollBarEnabled(false);
     }
+    
+    ///////////
+    this is added from gittest!!
+    ///////////
+
 }
