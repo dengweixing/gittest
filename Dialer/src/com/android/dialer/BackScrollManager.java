@@ -32,7 +32,7 @@ public class BackScrollManager {
         /** Sets the offset by which to scroll. */
         public void setOffset(int offset);
         /** Gets the maximum offset that should be applied to the header. */
-        public int getMaximumScrollableHeaderOffset();
+        public int getMaximumScrollableHeaderOffset(change from gittestb);
     }
 
     private final ScrollableHeader mHeader;
