@@ -13,9 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!--%^^-->
+<!--some body else add-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.dialer5">
+    package="com.android.dialer">
 
     <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
